@@ -9,13 +9,15 @@
     </head>
     <body>
         <header class="container row">
-            <div class="container">
-                <img src="./img/logo.png" class="imagen-logo">
-            </div>
-            <div class="container-icons derecha pt-3 pr-3">
-                <i class="fab fa-facebook-square fa-2x"></i>
-                <i class="fab fa-twitter-square fa-2x"></i>
-            </div>
+            <div class="container-flex">
+                <div class="container-logo">
+                    <img src="./img/logo.png" class="imagen-logo">
+                </div>                
+                <div class="container-icons">
+                    <i class="fab fa-facebook-square fa-2x"></i>
+                    <i class="fab fa-twitter-square fa-2x"></i>
+                </div>                
+            </div>                
             <div class="container centrar pt-1 mb-3">
                 <a class="menu-item">Inicio</a>
                 <a class="menu-item">Nuestra Universidad</a>
@@ -29,10 +31,10 @@
             <div class="container">
                 <img src="./img/slide.jpg" class="imagen-grande">
             </div>
-            <div class="containerv2 pt-2">
+            <div class="container pt-2 centrar">
                 <a class="texto-v1">OFERTA ACADÉMICA</a>
             </div>
-            <div class="containerv3 row pt-2">
+            <div class="containerv3 pt-2">
                 <div class="container-fotos centrar">
                     <img src="./img/hero.jpg" class="imagen-estudio"><br>
                     <h3> Departamento Académico de Agronomía<h3>
@@ -58,20 +60,25 @@
             <div class="contacto mt-3">
                 <H1>CONTACTO</H1>
             </div>
-            <div class="container mt-2 row">
-                <img src="./img/imagen-contact.jpg" class="imagen-contacto">
+            <div class="container mt-2">
+                <div class="container-contacto">
+                    <img src="./img/imagen-contact.jpg" class="imagen-contacto">
                 <div class="container-inputs">
                     <input type="text" placeholder="Nombre" class="inputs"><br>
                     <input type="text" placeholder="Correo" class="inputs"><br>
                     <textarea rows="9"class="inputs" placeholder="comentario"></textarea>
-                    <div class="container derecha">
+                    <div class="div-btn">
                         <button class="btn mt-1">Enviar</button>
                     </div>                    
                 </div>
+                </div>
+                
             </div>
         </main>
         <footer class="mt-2">
-            Carretera al Sur KM 5.5., Apartado Postal 19-,B, C.P. 23080, La Paz Baja California Sur, México. Teléfono (612) 12 388 00
+            <div class="container centrar">
+                <p>Carretera al Sur KM 5.5., Apartado Postal 19-,B, C.P. 23080, La Paz Baja California Sur, México. Teléfono (612) 12 388 00</p>                
+            </div>
         </footer>
     </body>
 </html>

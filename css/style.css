@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -12,6 +13,7 @@ footer{
     text-align: center;
     padding-top: 17px;
     padding-bottom: 17px;
+    font-size: 15px;
 }
 
 .container {
@@ -22,8 +24,12 @@ footer{
     width: 50%;
 }
 
-.containerv2{
-    text-align: center;
+.container-flex{
+    background-color: #1b56afde;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-item{
@@ -37,9 +43,22 @@ footer{
 }
 
 .container-icons{
+    padding-right: 5vw;
     width: 100%;
-    height: 100px;
-    background-color: #003d9ade;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container-logo{
+    padding-left: 37vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+.imagen-logo {
+    float: left;
+    width: 320px;
 }
 
 .texto-v1{
@@ -48,23 +67,17 @@ footer{
     font-weight: 100;
 }
 
-.imagen-logo {
-    float: left;
-    padding-left: 40%;
-    background-color: #1b56afde;
-}
-
 .imagen-grande{
-    width: 1349px;
+    width: 100%;
 }
 
 .imagen-contacto{
-    width: 550px;
+    width: 40%;
     float: left;
-    margin-left: 190px;
 }
 
 .containerv3{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,13 +87,13 @@ footer{
     border-color: #DCDCDC;
     border-width: 1px;
     border-style: solid;
-    width: 323px;
+    width: 100%;
     text-align: center;
-    margin-right: 30px;
+    margin-right: 2vw;
 }
 
 .imagen-estudio{
-    width: 320px;
+    width: 100%
 }
 
 .fa-facebook-square{
@@ -108,11 +121,11 @@ footer{
 }
 
 .pt-3{
-    padding-top: 2.5em;
+    padding-top: 3vw;
 }
 
 .pr-3{
-    padding-right: 1.5em;
+    padding-right: 10vw;
 }
 
 .mb-3{
@@ -122,7 +135,6 @@ footer{
 h5{
     color: #ABABAB;
     font-size: 15px;
-    
 }
 
 .mt-1{
@@ -171,11 +183,12 @@ hr{
 }
 
 .container-inputs{
-    padding-left: 850px;
+    width: 25%;
+    padding-left: 2%;
 }
 
 .inputs{
-    width: 350px;
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     border: 1px solid #ced4da;
@@ -192,5 +205,64 @@ hr{
     border-radius: 4px;
     border: 1px solid #1b56afde;
     text-align: center;
-    margin-right: 150px;
+}
+
+.container-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-btn{
+    width: 100%;
+    text-align: right;
+}
+
+h3 {
+    font-size: 19.5px;
+}
+
+@media (max-width: 1024px) {
+    .menu-item{
+        color: #426FB8;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .texto-v1{
+        color: #426FB8;
+        font-size: 25px;
+        font-weight: 100;
+    }
+
+    h5{
+        color: #ABABAB;
+        font-size: 12px;
+    }
+
+    .contacto{
+        width: 100%;
+        background-color: #7496DA;
+        text-align: center;
+        color: white;
+        font-size: 12px;
+    }
+
+    .imagen-logo {
+        float: left;
+        width: 300px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    footer{
+        background-color: #1b56afde;
+        color: #E9B513;
+        text-align: center;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        font-size: 12px;
+    }
 }
